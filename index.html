@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Virgo Petshop</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!--Logo-->
+    <link rel="icon" type="image/x-icon" href="img/img/paw-solid.png" />
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/5ef359b4dc.js" crossorigin="anonymous"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .slideshow-container {
+          max-width: 100%;
+          position: relativ;
+          margin: auto;
+        }
+        
+        .mySlides {
+          display: flex;
+          position: absolute;
+          right: -750px;
+          width: 100%;
+          height: auto;
+        }
+        img {
+          width: 670px;
+          height: 522px;
+        }
+      </style>
+      
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div clas="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa-solid fa-paw"></i> Virgo Petshop</h1>
+                    <!--<i class="fa-solid fa-shield-cat"></i>-->
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link">Produk</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Dokter</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="login.html" class="btn btn-primary py-2 px-4">Login</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Selamat Datang<br>Di Virgo petshop</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Virgo petshop adalah website onlineshop yang menjual berbagai macam hewan peliharaan, tidak hanya itu kami juga menjual pakan, vitamin, cage, dan aksesorisnya.</p>
+                            <a href="menu.html" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Produk</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/cat/foto2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4" class="dropdown-item">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <a href="CEO.html">CEO</a>
+                                <p>Pelayanan yang baik menjadi prinsip saya</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa-3x fa-solid fa-stethoscope text-primary mb-4"></i>
+                                <a href="team.html">Doctor</a>
+                                <p>Jangan khawatir dengan kesehatan hewan </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <a href="booking.html">Booking Online</a>
+                                <p>Pesan di tempat di kirim ke tempat sesuai alamat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <a href="service.html">Service</a>
+                                <p>Jika ada kendala jangan lupa hubungi kami</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/bird/pexels-david-atkins-6337786.jpg" style="margin-top: 37%";>
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/cat/pexels-dominika-roseclay-977935.jpg" >
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/dog/pexels-steshka-willems-1390361.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/rabbit/pexels-alexey-demidov-12534630.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa-solid fa-paw text-primary mb-4"></i> Virgo Petshop</h1>
+                        <p class="mb-4">Virgo petshop adalah website onlineshop yang menjual berbagai macam hewan peliharaan, tidak hanya itu kami juga menjual pakan, vitamin, cage, dan aksesorisnya.</p>
+                        <p class="mb-4">Ayo order di petshop, kualitas terjamin dan tentunya teruji klinis</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">25</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Doctor Specialis</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa-solid fa-shield-cat fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Hewan</small>
+                                    <h6 class="mt-n1 mb-0">Animals</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa-solid fa-shop fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Kurung dan Aksesoris</small>
+                                    <h6 class="mt-n1 mb-0">Cage and accessories</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa-solid fa-bone fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Pakan dan Vitamin</small>
+                                    <h6 class="mt-n1 mb-0">food and vitamins</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Start Tab 1-->
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cat/pexels-witchagron-buapa-14721098.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Blaster Anggora Keyyi</span>
+                                                <span class="text-primary">$125</span>
+                                            </h5>
+                                            <small class="fst-italic">blaster anggora dan Jawa short memiliki bulu indah seperti kucing anggora namun pendek seperti kucing Jawa short</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cat/pexels-dominika-roseclay-977935.jpg" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Anggora Catty</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">anggora memiliki bulu panjang dan indah</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cat/pexels-matheus-bertelli-7410722.jpg" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Persia Rose</span>
+                                                <span class="text-primary">$125</span>
+                                            </h5>
+                                            <small class="fst-italic">Persia memiliki bulu cantik dan kuping lebih panjang dari kucing lain</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/dog/pexels-steshka-willems-1390361.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Puppy Shih Tzu</span>
+                                                <span class="text-primary">$145</span>
+                                            </h5>
+                                            <small class="fst-italic">Anjing shih tzu memiliki bulu halus yang bisa tumbuh hingga panjang.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/dog/pexels-tanya-gorelova-3860304.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Samoyed fredy</span>
+                                                <span class="text-primary">$150</span>
+                                            </h5>
+                                            <small class="fst-italic">Anjing samoyed terkenal sangat ramah dan memiliki ekspresi wajah yang selalu tersenyum</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/bird/pexels-roshan-kamath-1661179.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Lovebird joy</span>
+                                                <span class="text-primary">$50</span>
+                                            </h5>
+                                            <small class="fst-italic">Lovebird merupakan burung yang termasuk ke dalam spesies beo.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/bird/pexels-jimmy-chan-2339342.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Perkici ken</span>
+                                                <span class="text-primary">$75</span>
+                                            </h5>
+                                            <small class="fst-italic">burung perkici mirip dengan burung beo namun dia memiliki warna corak yang banyak dan unik</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/fish/pexels-fox-213399.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ikan Koi</span>
+                                                <span class="text-primary">$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Ikan hias yang satu ini merupakan hasil persilangan antara beberapa jenis ikan mas yang berwarna putih dan juga merah.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/fish/pexels-jeffry-surianto-9004398.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ikan Angelfish</span>
+                                                <span class="text-primary">$35</span>
+                                            </h5>
+                                            <small class="fst-italic">Ikan angelfish merupakan salah satu anggota dari keluarga ikan cichlid. Dimana ikan tersebut juga tergolong ke dalam ikan discus, parrot, dan oscar.</small>
+                                        </div>
+                                    </div><br>
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/rabbit/pexels-smooth-click-3828097.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Kelinci Dwarf</span>
+                                                <span class="text-primary">$75</span>
+                                            </h5>
+                                            <small class="fst-italic">Kelinci dwarf terkenal memiliki badan yang kecil, bahkan berat maksimalnya saja hanya mencapai 1,5 kg. </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/rabbit/pexels-alexey-demidov-12534630.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Kelinci satin</span>
+                                                <span class="text-primary">$65</span>
+                                            </h5>
+                                            <small class="fst-italic">Kelinci ini memiliki mutasi gen langsung dari havana yang membuat bulunya terlihat lebih berkilau layaknya kain satin.</small>
+                                        </div>
+                                    </div><br>
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/rabbit/pexels-mati-mango-3820509.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Kelinci Belanda</span>
+                                                <span class="text-primary">$70</span>
+                                            </h5>
+                                            <small class="fst-italic">Kelinci belanda menjadi ras paling populer untuk dipelihara karena aktif bermain dan ramah kepada manusia.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Tab 1-->
+
+                        <!--Start Tab 2-->
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/bird/download (2).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Sangkar burung besi</span>
+                                                <span class="text-primary">$35</span>
+                                            </h5>
+                                            <small class="fst-italic">Sangkar burung</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cat/download (8).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>tempat kucing lucu</span>
+                                                <span class="text-primary">$35</span>
+                                            </h5>
+                                            <small class="fst-italic">tempat tidur kucing</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cat/tempat-makan-kucing.webp" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Tempat makan minum</span>
+                                                <span class="text-primary">$15</span>
+                                            </h5>
+                                            <small class="fst-italic">Tempat makanan dan juga minum</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/dog/download (11).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Kurung besi</span>
+                                                <span class="text-primary">$35</span>
+                                            </h5>
+                                            <small class="fst-italic">Kurung anjing besi</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/dog/download (6).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ikat leher</span>
+                                                <span class="text-primary">$15</span>
+                                            </h5>
+                                            <small class="fst-italic">Ikat leher anjing kulit</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/fish/download (5).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Aquarium</span>
+                                                <span class="text-primary">$45</span>
+                                            </h5>
+                                            <small class="fst-italic">Aquarium ikan hias ukuran 2 x 1 meter</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cat/cTg3rxw5vP.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Gulungan tali</span>
+                                                <span class="text-primary">$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Permainan gulungan tali agar kucing aktif bergerak</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/bird/download.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Tempat makan</span>
+                                                <span class="text-primary">$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Tempat makan burung kekinian</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/rabbit/images (1).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Kandang kelinci</span>
+                                                <span class="text-primary">$55</span>
+                                            </h5>
+                                            <small class="fst-italic">Kandang kelinci berbentuk rumah rumahan</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Tab 2-->
+
+                        <!---Start Tab 3-->
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/rabbit/images (2).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Morning sun</span>
+                                                <span class="text-primary">$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Pakan kelinci </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/bird/hg.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Mazuri</span>
+                                                <span class="text-primary">$15</span>
+                                            </h5>
+                                            <small class="fst-italic">Pakan burung</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cat/dgd.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Vitamin</span>
+                                                <span class="text-primary">$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Vitamin kucing untuk nafsu makan</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cat/download (2).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Royal Canin</span>
+                                                <span class="text-primary">$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Pakan kucing</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/dog/download (4).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>VItamin</span>
+                                                <span class="text-primary">$35</span>
+                                            </h5>
+                                            <small class="fst-italic">Vitamin untuk kucing dan juga anjing agar bulu tidak mudah rontok</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/fish/download (9).jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Sakura</span>
+                                                <span class="text-primary">$15</span>
+                                            </h5>
+                                            <small class="fst-italic">Pakan ikan</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/dog/e4decdfd-3789-48b6-8ebd-3120e4ed3231.png" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Royal Canin</span>
+                                                <span class="text-primary">$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Pakan anak anjing</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/rabbit/download.jpg" alt="" style="width: 100px; height: 120px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Vitamin</span>
+                                                <span class="text-primary">$25</span>
+                                            </h5>
+                                            <small class="fst-italic">Vitamin kelinci untuk menambah nafsu makan dan pertumbuhan</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+       <!-- Reservation Start -->
+       <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div>
+                      <div class="slideshow-container">
+                        <div class="mySlides">
+                          <img src="img/cat/cong-h-RWSh0t7bw68-unsplash.jpg" alt="">
+                        </div>
+                        
+                        <div class="mySlides">
+                          <img src="img/dog/pexels-castorly-stock-3866500.jpg" alt="">
+                        </div>
+                        
+                        <div class="mySlides">
+                          <img src="img/fish/pexels-fox-213399.jpg" alt="">
+                        </div>
+                        <div class="mySlides">
+                          <img src="img/bird/pexels-pixabay-326900.jpg" alt="">
+                        </div>
+                        <div class="mySlides">
+                          <img src="img/rabbit/pexels-alexey-demidov-12534630.jpg" alt="">
+                        </div>
+                        </div>
+                      </div>
+                    
+                      <script>
+                        var slideIndex = 0;
+                        showSlides();
+                    
+                        function showSlides() {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                    
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                          }
+                    
+                          slideIndex++;
+                          if (slideIndex > slides.length) {
+                            slideIndex = 1;
+                          }
+                    
+                          slides[slideIndex - 1].style.display = "block";
+                    
+                          setTimeout(showSlides, 5000); // Change slide every 2 seconds
+                        }
+                      </script>
+
+                </div>
+            </div>
+            <div class="col-md-6 bg-dark d-flex align-items-center">
+                <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                    <h1 class="text-white mb-4">Set Booking Schedule</h1>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating date" id="date3" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                    <label for="datetime">Date & Time</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="select1">
+                                        <option value="1">Steffani joy M. Vet, Sp. BH</option>
+                                        <option value="2">Robbert men M. Vet, Sp. PD-HTB</option>
+                                        <option value="3">Vallerie M. Vet, Sp. KLH</option>
+                                        <option value="3">James Jhason M. Vet, Sp. MPKH</option>
+                                    </select>
+                                    <label for="select1">Doctor</label>
+                                  </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Special Request</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Record now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/5TyDk2PAaJ4" title="YouTube video player" 
+                         allowfullscreen allowscriptaccess="always" allow="autoplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reservation End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+                    <h1 class="mb-5">Our Doktor</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/dokter/pexels-cedric-fauntleroy-4270366.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Steffani joy M. Vet, Sp. BH</h5>
+                            <small>Ilmu kesehatan Spesials Bedah dan Bedah Plastik Hewan</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/dokter/pexels-los-muertos-crew-8460157.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Robbert men M. Vet, Sp. PD-HTB</h5>
+                            <small>Ilmu Kesehatan spesialis Hewan Ternak Besar </small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/dokter/pexels-los-muertos-crew-8460374.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Vallerie M. Vet, Sp. KLH</h5>
+                            <small>Ilmu Kesehatan baagian Kepala dan Leher Hewan</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/dokter/pexels-tima-miroshnichenko-6235652.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">James Jhason M. Vet, Sp. MPKH</h5>
+                            <small>Ilmu Emergensi Medis dan Perawatan Kritis Hewan</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Udah pernah nyobain beli di toko lain, tapi kaget banget ternyata disini harganya lebih murah!!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testi/testi1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Grachia Nanty</h5>
+                                <small>Pelanggan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Buat harga segini menurutku lumayan worth it sih.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testi/testi2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Kevin Grandy</h5>
+                                <small>Pelanggan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>yang suka memelihara hewan wajib sih dateng ke virgo pethop</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testi/testi3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Justine log</h5>
+                                <small>Pelanggan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>gak tau udah berapa kali beli hewan peliharaan di sini ,soalnya hewannya sehat sehat karena memiliki 4 dokter yang mumpuni</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testi/testi4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Carollina diesty</h5>
+                                <small>Pelanggan</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Pasar minggu ,Jakarta Selatan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>083894462292</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>muhammadshiddiq785@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">NewsMember</h4>
+                        <p>Yuk jadi New Member</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <a href=""><button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Muhammad Shiddiq STT Terpadu NUrul Fikri</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

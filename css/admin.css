@@ -1,0 +1,117 @@
+ /* CSS  */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+
+  .header {
+    background-color: #ffde59;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav {
+    background-color: #ffb311;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #notif {
+    position: absolute;
+    right: 190px;
+    top: 250px;
+  }
+  #notif2 {
+    position: absolute;
+    right: 145px;
+    top: 250px;
+  }
+
+  .nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 5px;
+  }
+
+  .nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  #img {
+ border-radius: 50%;
+ padding: 0;
+ margin: 0;
+}
+  .card {
+    width: 85%;
+    float: right;
+    margin-top: 10px
+  }
+
+  .sidebar {
+    background-color: #000000;
+    color: #fff;
+    width: 210px;
+    height: 500px;
+    padding: 20px;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    color: #777;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
